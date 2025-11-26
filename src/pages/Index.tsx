@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -79,13 +80,13 @@ const Index = () => {
           </motion.p>
 
           {/* CTA */}
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col items-center gap-4 pt-4 sm:flex-row sm:justify-center"
           >
-            <Button 
+            {/* <Button
               size="lg"
               className="group relative overflow-hidden bg-glacier hover:bg-glacier/90 text-primary-foreground font-medium tracking-wide transition-all duration-300"
             >
@@ -96,15 +97,16 @@ const Index = () => {
                 whileHover={{ x: 0 }}
                 transition={{ duration: 0.3 }}
               />
-            </Button>
-            <Button 
+            </Button> */}
+            <Button
+              asChild
               size="lg"
               variant="outline"
               className="border-glacier/30 bg-transparent hover:bg-glacier/10 text-foreground font-medium tracking-wide"
             >
-              Learn More
+              <Link to="/facts">Learn More</Link>
             </Button>
-          </motion.div> */}
+          </motion.div>
         </motion.div>
 
         {/* Footer info */}
