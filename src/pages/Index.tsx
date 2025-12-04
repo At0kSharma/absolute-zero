@@ -117,7 +117,7 @@ const Index = () => {
           className="absolute bottom-8 left-0 right-0 text-center"
         >
           <p className="font-mono text-xs tracking-widest text-muted-foreground">
-            at0k
+            At0k
           </p>
         </motion.div>
       </main>
